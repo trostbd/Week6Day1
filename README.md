@@ -6,3 +6,4 @@
 4.  Write Junit test using assertions for the above
 
 ![image](https://user-images.githubusercontent.com/46461171/52656970-8701fc00-2ec5-11e9-9870-9f504e9b4099.png)
+![image](https://user-images.githubusercontent.com/46461171/52657027-b153b980-2ec5-11e9-9f10-43d8db389efa.png)
