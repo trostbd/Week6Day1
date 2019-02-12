@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data>
+    <variable
+        name="viewModel"
+        type="com.example.lawre.week6day1.viewmodel.PersonViewModel"/>
+    <variable
+        name="person"
+        type="com.example.lawre.week6day1.model.Person"/>
+</data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.Main2Activity">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{person.getName()}"/>
+
+    <TextView
+        android:id="@+id/tvBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{person.getBook()}"/>
+
+    <TextView
+        android:id="@+id/tvMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{person.getMovie()}"/>
+
+</LinearLayout>
+</layout>

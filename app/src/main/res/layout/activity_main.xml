@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.lawre.week6day1.viewmodel.PersonViewModel"/>
+        <variable
+            name="person"
+            type="com.example.lawre.week6day1.model.Person"/>
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Name"
+        android:afterTextChanged="@{(editable)->viewModel.setPersonName(editable)}"
+        />
+
+    <EditText
+        android:id="@+id/etFavoriteBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Favorite Book"
+        android:afterTextChanged="@{(editable)->viewModel.setPersonBook(editable)}"/>
+
+    <EditText
+        android:id="@+id/etFavoriteMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Favorite Movie"
+        android:afterTextChanged="@{(editable)->viewModel.setPersonMovie(editable)}"/>
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="@{view->viewModel.handleClick(view)}"/>
+
+</LinearLayout>
+</layout>
